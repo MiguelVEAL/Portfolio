@@ -1,0 +1,149 @@
+body{
+    font-family: monospace;
+    background-color: rgba(38,35,53,255);
+}
+.clearfix{
+    clear: both;
+}
+h3{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+h5 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+li a:active{
+    color: white;
+}
+li a:visited{
+    color: white;
+}
+li a:hover {
+    color: rgb(68, 65, 74); /* Mantiene el color al pasar el cursor */
+}
+
+li a:focus {
+    color: rgb(127, 36, 212); /* Mantiene el color cuando el enlace está enfocado */
+}
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Ajusta según el diseño */
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Hace que los elementos queden en una columna */
+    align-items: center; /* Centra los elementos */
+}
+
+.navbar li {
+    margin: 15px 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+#content {
+    margin-left: 200px; /* Mueve el contenido a la derecha */
+    padding: 20px; /* Opcional: agrega espacio alrededor del contenido */
+}
+
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Para móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center;
+}
+
+/* Para que la imagen quede abajo en móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Cambia a diseño de columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        text-align: center; /* Centra el contenido */
+    }
+}
+#photo {
+    width: 400px; /* Ajusta el tamaño según necesites */
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+h1{
+    color:chartreuse;
+    font-size: 8vw;
+    
+    
+    filter: drop-shadow(0 0 10px rgb(128, 255, 0, 0.8));
+}
+
+h2{
+    font-size: 4vw;
+     filter: drop-shadow(0 0 10px rgba(1, 251, 255, 0.8));
+     color: aqua;
+}
+
+
+#me{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right:  50px;
+}
+.interest{
+    font-size: 20px;
+    color: white;
+    margin-left: 60px;
+    
+}
+.caja{
+    float: left;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+}
+#social{
+    margin: 40px;
+}
