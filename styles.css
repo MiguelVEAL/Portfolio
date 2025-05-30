@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: monospace;
     background-color: rgba(38,35,53,255);
@@ -144,6 +147,17 @@ h2{
     border-radius: 20px;
     background-color: black;
 }
-#social{
-    margin: 220px;
+#social {
+    display: flex; /* Coloca los elementos en línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Asegura que estén alineadas */
+    gap: 20px; /* Espaciado entre las imágenes */
+}
+
+#social div {
+    display: flex;
+}
+.sociallogos{
+    width: 150px;
+    height: 100%;
 }
